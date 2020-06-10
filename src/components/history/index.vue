@@ -3,7 +3,7 @@
   <div id="History">
     <div class="history_title">集团发展史</div>
     <swiper :options="swiperOption">
-      <swiper-slide class="swiper-slide" v-for="(item,index) in carouselArr" :key="index">
+      <swiper-slide class="swiper-slide" v-for="(item,index) in carouselArr" :key="item+index">
         <img :src="item" />
       </swiper-slide>
       <!-- 分页器 -->
@@ -26,7 +26,11 @@ export default {
   data() {
     //这里存放数据
     return {
-      carouselArr: [require("../../assets/img/hero-1.jpg"),require("../../assets/img/hero-2.jpg"),require("../../assets/img/hero-3.jpg"),],
+      carouselArr: [
+        require("../../assets/img/hero-1.jpg"),
+        require("../../assets/img/hero-2.jpg"),
+        require("../../assets/img/hero-3.jpg")
+      ],
       imgIndex: 1,
 
       swiperOption: {
@@ -47,6 +51,8 @@ export default {
           stopOnLastSlide: false,
           disableOnInteraction: false
         },
+        // autoplay: false,
+
 
         //滑动速度
         speed: 800,
@@ -86,10 +92,8 @@ export default {
 
   //生命周期 - 创建完成（可以访问当前this实例）
   created() {},
-
   //生命周期 - 挂载完成（可以访问DOM元素）
   mounted() {},
-
   beforeCreate() {}, //生命周期 - 创建之前
   beforeMount() {}, //生命周期 - 挂载之前
   beforeUpdate() {}, //生命周期 - 更新之前
@@ -112,10 +116,19 @@ export default {
   align-items: center;
   padding: 2rem 0;
   box-sizing: border-box;
-  .history_title{
-      font-size: 0.8rem;
-      margin-bottom:0.2rem;
-
+  .history_title {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .swiper-container{
+    width: 90%;
+    .swiper-wrapper{
+      width: 100%;
+      height: 100%;
+      .swiper-slide{
+        width: 100% !important;
+      }
+    }
   }
 }
 </style>

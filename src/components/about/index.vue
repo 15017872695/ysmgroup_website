@@ -58,10 +58,11 @@ export default {
   span:nth-child(2) {
     font-size: 0.5rem;
     margin-bottom: 0.5rem;
+        line-height: 0.6rem;
   }
   div:nth-child(3) {
     display: flex;
-    width: 30%;
+    width: auto;
     justify-content: space-around;
     margin-bottom: 0.5rem;
     img {

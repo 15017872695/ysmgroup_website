@@ -78,6 +78,7 @@ export default {
         }
       }
       this.tabIndex = navIndex;
+      
     },
 
     scrollTo(index) {

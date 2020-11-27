@@ -2,7 +2,7 @@
   <div id="theMainMembers">
     <div class="theMainMembers_Wapper">
       <h1 class="theMainMembers_name">核心成员</h1>
-      <h3 class="theMainMembers_userInfo">世界可塑者</h3>
+      <h3 class="theMainMembers_userInfo">未来塑造者</h3>
       <div
         class="theMainMembers_Info"
       >余氏集团是由周志佳和余洪全以及陈俊杰创造的。周志佳、余洪全、陈俊杰是在学校时认识的，成了好朋友。他们坚信，有了合适的资源，独奏家和小团队也能执行漂亮的产品。因此，他们制作了余氏集团来帮助开发商和初创公司制作出色的产品——互联网使得"小家伙"能够直接与"大人物"竞争。</div>
@@ -94,6 +94,7 @@ export default {
     }
     .theMainMembers_Info {
       font-size: 0.4rem;
+      line-height: 0.6rem;
     }
     .theMainMembers_userList {
       width: 100%;
@@ -110,10 +111,11 @@ export default {
         width: 6.2rem;
         height: 100%;
         border-radius: 0.3rem;
-        padding: 0 0.1rem;
+        padding: 0 0.2rem;
         box-sizing: border-box;
         transition: 0.5s;
         margin-bottom: 0.2rem;
+        padding-bottom: 0.5rem;
         .userImg {
           margin-top: 1rem;
         }
